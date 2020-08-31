@@ -8,7 +8,9 @@
 
 3. Run the all the tests with `npm test`, to run only specific tests press `p` to apply the filter. You can also run the tests of an specfic exercise by running `npm run ex1`, `npm run ex2` etc.
 
-4. Start Solving the exercises by removing the `skip` from the test an implementing the test.
+You can also run with the following command: `npm run exx 1` 
+
+1. Start Solving the exercises by removing the `skip` from the test an implementing the test.
 
 
 # Exercise 1
@@ -22,3 +24,16 @@ A simple warm up for testing. In this exercises we test the different operations
 In this section we go a step fruther and start testing asynchronous. Create tests to see if the mightyComputer is able to calculate the meaning of life.
 
 * [Testing Asynchrounous Code](https://jestjs.io/docs/en/asynchronous)
+
+
+# Exercise 2
+
+In this section we go a step fruther and start testing asynchronous. Create tests to see if the mightyComputer is able to calculate the meaning of life.
+
+* [Testing Asynchrounous Code](https://jestjs.io/docs/en/asynchronous)
+
+# Exercise 3
+
+Here, we have an Api Call that brings ramdom value, so in order to have a consistent test, we need to intercept the API Call, but make sure that the implementation of the function is the same.
+
+* [Mocking Fundamentals](https://github.com/kentcdodds/js-mocking-fundamentals/tree/master/src)

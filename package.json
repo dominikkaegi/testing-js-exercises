@@ -9,6 +9,8 @@
   "scripts": {
     "test": "jest --watchAll",
     "ex1": "jest */exercise1/** --watch",
-    "ex2": "jest */exercise2/** --watch"
+    "ex2": "jest */exercise2/** --watch",
+    "ex3": "jest */exercise3/** --watch",
+    "exx": "jest $0 --watch"
   }
 }
