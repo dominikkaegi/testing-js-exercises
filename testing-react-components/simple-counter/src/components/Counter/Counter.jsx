@@ -33,7 +33,7 @@ export default function Counter() {
         <Button type="button" onClick={handleDecrease}>Decrease</Button>
       </div>
       <HelperText show={showAlert} type="error">
-        Can not go below 0
+        Can't go below 0
       </HelperText>
     </div>
   );
