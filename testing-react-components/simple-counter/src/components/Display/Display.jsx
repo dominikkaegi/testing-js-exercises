@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function display({ vlaue }) {
+export default function display({ value }) {
   return (
     <div className="display">
-      <span className="display-text">{vlaue}</span>
+      <h2 className="display-text">{value}</h2>
     </div>
   );
 }
