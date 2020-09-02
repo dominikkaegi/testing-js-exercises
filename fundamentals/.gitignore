@@ -1,4 +1,3 @@
 /node_modules
-/**/*.sol.js
 yarn.lock
 package-lock.json
