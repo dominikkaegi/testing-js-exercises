@@ -1,7 +1,7 @@
 const api = require('./api')
 
 /**
- * Is not allowed to be disturb with arguments
+ * Add an input as prefix for the returning data
  */
 async function processData(input) {
   if (!input) {
