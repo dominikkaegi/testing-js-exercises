@@ -1,0 +1,14 @@
+{
+  "name": "testing-js-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "ex1": "jest */exercise1/** --watch",
+    "exx": "jest $0 --watch"
+  }
+}
