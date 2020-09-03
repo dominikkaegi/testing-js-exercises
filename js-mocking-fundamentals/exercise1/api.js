@@ -1,4 +1,4 @@
-async function getData(input) {
+async function getPrefixedData(input) {
   return new Promise((resolve) => {
     const output = [...Array(Math.floor(Math.random() * 6) + 1)].map((_,idx) => 
     `${input}_${idx}`);
@@ -10,7 +10,5 @@ async function getData(input) {
 }
 
 module.exports = {
-  getData
+  getPrefixedData
 }
-
-getData('jim').then((data) => console.log(data))

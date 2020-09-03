@@ -8,7 +8,7 @@ async function processData(input) {
     throw new Error('I need to have a value')
   }
 
-  return await api.getData(input)
+  return await api.getPrefixedData(input)
 }
 
 
