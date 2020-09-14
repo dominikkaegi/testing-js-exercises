@@ -57,6 +57,15 @@ html {
   --text-red-700: #c53030;
   --text-red-800: #9b2c2c;
   --text-red-900: #742a2a;
+  --text-green-100: #f0fff4;
+  --text-green-200: #c6f6d5;
+  --text-green-300: #9ae6b4;
+  --text-green-400: #68d391;
+  --text-green-500: #48bb78;
+  --text-green-600: #38a169;
+  --text-green-700: #2f855a;
+  --text-green-800: #276749;
+  --text-green-900: #22543d;
 }
 
 * {
@@ -123,10 +132,10 @@ input {
 }
 
 .todo-form__button {
-  background-color: var(--text-gray-400);
+  background-color: var(--text-gray-200);
   border: none;
   padding: 1em 2em;
-  color: var(--white);
+  color: var(--text-green-300);
   font-weight: bolder;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -134,6 +143,7 @@ input {
 
 .todo-list {
   margin: 0;
+  border-bottom: 1px solid var(--border-gray-200);
 }
 
 .todo-list-item {
@@ -155,6 +165,13 @@ input {
   cursor: pointer;
   display: hidden;
   color: var(--text-red-300);
+  opacity: 0;
+  transition: ease-in-out opacity 0.2s;
+  padding: 0em 1em;
+}
+
+.todo-list-item:hover > .todo-list-item__button {
+  opacity: 1;
 }
 
 .todo-list-item__checkbox {

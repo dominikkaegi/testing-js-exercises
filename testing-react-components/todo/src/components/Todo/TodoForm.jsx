@@ -33,7 +33,7 @@ const TodoForm = ({ onNewTodo }) => {
         disabled={isLoading}
       ></input>
       <button disabled={isLoading} className="todo-form__button" type="submit">
-        Create
+        Add
       </button>
     </form>
   );

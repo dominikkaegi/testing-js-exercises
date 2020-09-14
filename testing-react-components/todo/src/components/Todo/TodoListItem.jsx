@@ -35,7 +35,7 @@ const TodoListItem = ({ todo, onUpdate, onDelete }) => {
         aria-label="delete"
         onClick={handleDelete}
       >
-        X
+        𝐗
       </button>
     </li>
   );
