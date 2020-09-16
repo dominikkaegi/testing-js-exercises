@@ -1,0 +1,211 @@
+html {
+  --transparent: transparent;
+  --current: currentColor;
+  --black: #000;
+  --white: #fff;
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e0;
+  --gray-500: #a0aec0;
+  --gray-600: #718096;
+  --gray-700: #4a5568;
+  --gray-800: #2d3748;
+  --gray-900: #1a202c;
+  --shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-outline: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  --shadow-none: none;
+  --border-transparent: transparent;
+  --border-current: currentColor;
+  --border-black: #000;
+  --border-white: #fff;
+  --border-gray-100: #f7fafc;
+  --border-gray-200: #edf2f7;
+  --border-gray-300: #e2e8f0;
+  --border-gray-400: #cbd5e0;
+  --border-gray-500: #a0aec0;
+  --border-gray-600: #718096;
+  --border-gray-700: #4a5568;
+  --border-gray-800: #2d3748;
+  --border-gray-900: #1a202c;
+  --text-black: #000;
+  --text-white: #fff;
+  --text-gray-100: #f7fafc;
+  --text-gray-200: #edf2f7;
+  --text-gray-300: #e2e8f0;
+  --text-gray-400: #cbd5e0;
+  --text-gray-500: #a0aec0;
+  --text-gray-600: #718096;
+  --text-gray-700: #4a5568;
+  --text-gray-800: #2d3748;
+  --text-red-100: #fff5f5;
+  --text-red-200: #fed7d7;
+  --text-red-300: #feb2b2;
+  --text-red-400: #fc8181;
+  --text-red-500: #f56565;
+  --text-red-600: #e53e3e;
+  --text-red-700: #c53030;
+  --text-red-800: #9b2c2c;
+  --text-red-900: #742a2a;
+  --text-green-100: #f0fff4;
+  --text-green-200: #c6f6d5;
+  --text-green-300: #9ae6b4;
+  --text-green-400: #68d391;
+  --text-green-500: #48bb78;
+  --text-green-600: #38a169;
+  --text-green-700: #2f855a;
+  --text-green-800: #276749;
+  --text-green-900: #22543d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-gray-500);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+input {
+  color: var(--text-gray-500);
+}
+
+::placeholder {
+  color: var(--text-gray-300);
+  font-style: italic;
+}
+
+.App {
+  padding: 2em;
+  background-color: var(--gray-100);
+  min-height: 100vh;
+}
+
+.todo {
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border-gray-200);
+  box-shadow: var(--shadow);
+}
+
+.todo-form {
+  display: flex;
+}
+
+.todo-form__label {
+  display: none;
+}
+
+.todo-form__input {
+  flex-grow: 1;
+  border: none;
+  border-radius: none;
+  text-indent: 1em;
+}
+
+.todo-form__button {
+  background-color: var(--text-gray-200);
+  border: none;
+  padding: 1em 2em;
+  color: var(--text-green-300);
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.todo-list {
+  margin: 0;
+  border-bottom: 1px solid var(--border-gray-200);
+}
+
+.todo-list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.3em 0em;
+  border-top: 1px solid var(--border-gray-200);
+}
+
+.todo-list-item--completed {
+  text-decoration: line-through;
+  color: var(--text-gray-300);
+}
+
+.todo-list-item__button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: hidden;
+  color: var(--text-red-300);
+  opacity: 0;
+  transition: ease-in-out opacity 0.2s;
+  padding: 0em 1em;
+}
+
+.todo-list-item:hover > .todo-list-item__button {
+  opacity: 1;
+}
+
+.todo-list-item__checkbox {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+}
+
+.todo-list-item__text {
+  display: flex;
+  align-items: center;
+}
+
+.todo-footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.todo-footer__button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  font-size: 0.7rem;
+  border: 1px solid transparent;
+}
+
+.filter--selected {
+  border: 1px solid var(--text-red-300);
+  border-radius: 5px;
+}
+
+.todo-filter-list {
+  margin: 0;
+  display: flex;
+}
