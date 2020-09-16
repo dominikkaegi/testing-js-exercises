@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Todo from './components/Todo'
+import Routes from './routes';
 
 function App() {
-  return (
-    <div className="App">
-      <Todo />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes />
+		</div>
+	);
 }
 
 export default App;
